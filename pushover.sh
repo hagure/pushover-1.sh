@@ -7,7 +7,8 @@ TOKEN="" # Must be set in pushover.conf or given on command line
 USER="" # Must be set in pushover.conf
 
 # Load user config
-CONFIG_FILE="${XDG_CONFIG_HOME-${HOME}/.config}/pushover.conf"
+#CONFIG_FILE="${XDG_CONFIG_HOME-${HOME}/.config}/pushover.conf"
+CONFIG_FILE="${HOME}/Dropbox/dotfiles/pushover.conf"
 if [ -e "${CONFIG_FILE}" ]; then
     . ${CONFIG_FILE}
 else
